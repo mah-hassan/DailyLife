@@ -1,4 +1,4 @@
-ًَ# DailyLife API
+# DailyLife APIs
 
 ## Overview
 
