@@ -1,0 +1,6 @@
+@DailyLife.Api_HostAddress = http://localhost:5277
+
+GET {{DailyLife.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

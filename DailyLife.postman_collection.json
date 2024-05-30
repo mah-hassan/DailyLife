@@ -1,0 +1,1744 @@
+{
+	"info": {
+		"_postman_id": "917fcee3-9d04-4663-8e1e-4d615044a1a6",
+		"name": "DailyLife",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30032939",
+		"_collection_link": "https://blue-space-871821.postman.co/workspace/New-Team-Workspace~1568c2ea-9144-4ed7-a1ef-5da5902b0e29/collection/30032939-917fcee3-9d04-4663-8e1e-4d615044a1a6?action=share&source=collection_link&creator=30032939"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"mahmoudbus7@gmail.com\",\r\n  \"password\": \"string_A7\",\r\n  \"dateOfBirth\": \"2002-06-16\",\r\n  \"fullname\": \"Mahmoud Hassan\",\r\n  \"role\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/auth/Register"
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"mahmoudbus7@gmail.com\",\r\n  \"password\": \"string_A7\",\r\n  \"dateOfBirth\": \"2002-06-16\",\r\n  \"fullname\": \"Mahmoud Hassan\",\r\n  \"role\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/auth/Register"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 May 2024 20:49:36 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": [],\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"mohammadelsaffy@gmail.com\",\r\n  \"password\": \"string_A7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/auth/Login"
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"mohammadelsaffy@gmail.com\",\r\n  \"password\": \"string_A7\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/auth/Login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 11:29:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Mohamed Ali\",\n    \"profilePicture\": \"https://dailylife.runasp.net/user/MAoyi5vczn.f5v.png\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiMDg5NzM3NDAtNTNjNy00ODQwLThlYjktZGFhZWM3NDMwNmYyIiwianRpIjoiMzJmOWJhNTAtMjYwYi00ZDQwLTljYjgtZDUyNDIxYjlhZjMxIiwiZXhwIjoxNzE3NjczMzg0LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.ELOQ37FCZ4pAXzXkXNIMPf5XhVo9Mlwr_7xwlnuBp0g\"\n}"
+						}
+					]
+				},
+				{
+					"name": "ProfilePicture",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImMwMjIyMzZmLTc0OTUtNDcyMS04ZTBiLTA3NTZmYzhhMzc3YyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1haG1vdWRidXM3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImJ1c2luZXNzb3duZXIiLCJzaWQiOiJlODU1ZTE1NC0wM2Y0LTQ3ZDAtYmZiOS1kOGM3MDFiMDMzNDciLCJqdGkiOiI0OTYxZDE0Yi1lMzIwLTQ1NTctYmNhZi05ODIzZjFhMTk3ODIiLCJleHAiOjE3MTA4MDQxMzEsImlzcyI6IkRhaWx5TGlmZSIsImF1ZCI6IkRhaWx5TGlmZSJ9.XxJAKbTsTwSro-IuswYarUB5oaBlPop_rN6Mebb6dBE"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "postman-cloud:///1eec7882-e1bf-4d50-b3c6-5e8a80b8a538"
+								}
+							]
+						},
+						"url": "https://localhost:7099/auth/profilePicture"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProfilePicture",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImMwMjIyMzZmLTc0OTUtNDcyMS04ZTBiLTA3NTZmYzhhMzc3YyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1haG1vdWRidXM3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImJ1c2luZXNzb3duZXIiLCJzaWQiOiJlODU1ZTE1NC0wM2Y0LTQ3ZDAtYmZiOS1kOGM3MDFiMDMzNDciLCJqdGkiOiI0OTYxZDE0Yi1lMzIwLTQ1NTctYmNhZi05ODIzZjFhMTk3ODIiLCJleHAiOjE3MTA4MDQxMzEsImlzcyI6IkRhaWx5TGlmZSIsImF1ZCI6IkRhaWx5TGlmZSJ9.XxJAKbTsTwSro-IuswYarUB5oaBlPop_rN6Mebb6dBE"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "https://localhost:7099/auth/profilePicture"
+					},
+					"response": []
+				}
+			],
+			"description": "App Roles\n\n1. Admin\n    \n2. BusinessOwner"
+		},
+		{
+			"name": "Business",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/api/Businesses/cf728546-2226-4b7f-b91a-9b6b53c12f26"
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/api/Businesses/cf728546-2226-4b7f-b91a-9b6b53c12f26"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 15:21:48 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DailyLife Cafe\",\r\n  \"categoryId\":\"2f01c4d8-6fb5-4375-87e0-9962c3fb41df\",\r\n  \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\r\n  \"latituade\": 30.0626,\r\n  \"longituade\": 31.2497,\r\n  \"city\": \"Cairo\",\r\n  \"state\": \"Cairo Governorate\",\r\n  \"street\": \"20 Ahmed Heshmat Street\",\r\n  \"addressDescription\": \"Nearby Tahrir Square\",\r\n  \"workTimes\":[\r\n    {\r\n        \"day\": 0,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    },\r\n    {\r\n        \"day\": 1,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    },\r\n    {\r\n        \"day\": 2,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    },\r\n    {\r\n        \"day\": 3,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/api/Businesses"
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"DailyLife Cafe\",\r\n  \"categoryId\":\"2f01c4d8-6fb5-4375-87e0-9962c3fb41df\",\r\n  \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\r\n  \"latituade\": 30.0626,\r\n  \"longituade\": 31.2497,\r\n  \"city\": \"Cairo\",\r\n  \"state\": \"Cairo Governorate\",\r\n  \"street\": \"20 Ahmed Heshmat Street\",\r\n  \"addressDescription\": \"Nearby Tahrir Square\",\r\n  \"workTimes\":[\r\n    {\r\n        \"day\": 0,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    },\r\n    {\r\n        \"day\": 1,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    },\r\n    {\r\n        \"day\": 2,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    },\r\n    {\r\n        \"day\": 3,\r\n        \"start\":\"08:00:00\",\r\n        \"end\":\"16:00:00\"\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/api/Businesses"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 15:25:03 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": \"3c467128-e160-4533-8a32-e4811aa91304\",\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "GetById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304"
+					},
+					"response": [
+						{
+							"name": "GetById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 15:32:24 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"3c467128-e160-4533-8a32-e4811aa91304\",\n    \"name\": \"DailyLife Cafe\",\n    \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\n    \"profilePicture\": null,\n    \"album\": [],\n    \"category\": \"Cafes\",\n    \"location\": {\n        \"latituade\": 30.0626,\n        \"longituade\": 31.2497\n    },\n    \"address\": {\n        \"city\": \"Cairo\",\n        \"state\": \"Cairo Governorate\",\n        \"street\": \"20 Ahmed Heshmat Street\",\n        \"description\": \"Nearby Tahrir Square\"\n    },\n    \"workTimes\": [\n        {\n            \"day\": 0,\n            \"start\": \"08:00:00\",\n            \"end\": \"16:00:00\"\n        },\n        {\n            \"day\": 1,\n            \"start\": \"08:00:00\",\n            \"end\": \"16:00:00\"\n        },\n        {\n            \"day\": 2,\n            \"start\": \"08:00:00\",\n            \"end\": \"16:00:00\"\n        },\n        {\n            \"day\": 3,\n            \"start\": \"08:00:00\",\n            \"end\": \"16:00:00\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DailyLife Cafe\",\r\n  \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\r\n  \"latituade\": 30.0626,\r\n  \"longituade\": 31.2490,\r\n  \"city\": \"Cairo\",\r\n  \"state\": \"Cairo Governorate\",\r\n  \"street\": \"20 Ahmed Heshmat Street\",\r\n  \"addressDescription\": \"Nearby Tahrir Square\",\r\n   \"workTimes\": [\r\n        {\r\n            \"day\": 0,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 1,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 2,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 3,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 4,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304"
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"DailyLife Cafe\",\r\n  \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\r\n  \"latituade\": 30.0626,\r\n  \"longituade\": 31.2490,\r\n  \"city\": \"Cairo\",\r\n  \"state\": \"Cairo Governorate\",\r\n  \"street\": \"20 Ahmed Heshmat Street\",\r\n  \"addressDescription\": \"Nearby Tahrir Square\",\r\n   \"workTimes\": [\r\n        {\r\n            \"day\": 0,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 1,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 2,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 3,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        },\r\n        {\r\n            \"day\": 4,\r\n            \"start\": \"08:00:00\",\r\n            \"end\": \"16:00:00\"\r\n        }\r\n    ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 21:50:50 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Businesses/search?searchTerm=dalylive",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Businesses",
+								"search"
+							],
+							"query": [
+								{
+									"key": "searchTerm",
+									"value": "dalylive"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/api/Businesses/search?searchTerm=dalylive",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"api",
+										"Businesses",
+										"search"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "dalylive"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:26:23 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"3c467128-e160-4533-8a32-e4811aa91304\",\n        \"name\": \"DailyLife Cafe\",\n        \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\n        \"profilePicture\": \"https://dailylife.runasp.net/Businesses/3c467128-e160-4533-8a32-e4811aa91304/tzoohykx.jpm.jpeg\",\n        \"album\": [],\n        \"category\": \"Cafes\",\n        \"location\": {\n            \"latituade\": 30.0626,\n            \"longituade\": 31.2497\n        },\n        \"address\": {\n            \"city\": \"Cairo\",\n            \"state\": \"Cairo Governorate\",\n            \"street\": \"20 Ahmed Heshmat Street\",\n            \"description\": \"Nearby Tahrir Square\"\n        },\n        \"workTimes\": [\n            {\n                \"day\": 0,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            },\n            {\n                \"day\": 1,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            },\n            {\n                \"day\": 2,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            },\n            {\n                \"day\": 3,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetBusinesses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/Businesses?page=1&size=10&fillter=distance&latitude=31.26&longitude=29.25",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"Businesses"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "fillter",
+									"value": "distance"
+								},
+								{
+									"key": "latitude",
+									"value": "31.26"
+								},
+								{
+									"key": "longitude",
+									"value": "29.25"
+								}
+							]
+						},
+						"description": "**pages is one based first page is number 1**\n\n**fillter paramter has 3 values**\n\n- Active\n    \n- Distance => **shouid pass lat and long for current location as well**\n    \n- Rate"
+					},
+					"response": [
+						{
+							"name": "FillterByRate",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/api/Businesses?page=1&size=10&fillter=Rate",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"api",
+										"Businesses"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										},
+										{
+											"key": "fillter",
+											"value": "Rate"
+										},
+										{
+											"key": "latitude",
+											"value": "31.26",
+											"disabled": true
+										},
+										{
+											"key": "longitude",
+											"value": "29.25",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:24:11 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"currentPage\": 1,\n    \"hasNextPage\": false,\n    \"totalCount\": 1,\n    \"result\": [\n        {\n            \"id\": \"3c467128-e160-4533-8a32-e4811aa91304\",\n            \"name\": \"DailyLife Cafe\",\n            \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\n            \"profilePicture\": \"https://dailylife.runasp.net/Businesses/3c467128-e160-4533-8a32-e4811aa91304/tzoohykx.jpm.jpeg\",\n            \"album\": [],\n            \"category\": \"Cafes\",\n            \"location\": {\n                \"latituade\": 30.0626,\n                \"longituade\": 31.2497\n            },\n            \"address\": {\n                \"city\": \"Cairo\",\n                \"state\": \"Cairo Governorate\",\n                \"street\": \"20 Ahmed Heshmat Street\",\n                \"description\": \"Nearby Tahrir Square\"\n            },\n            \"workTimes\": [\n                {\n                    \"day\": 0,\n                    \"start\": \"08:00:00\",\n                    \"end\": \"16:00:00\"\n                },\n                {\n                    \"day\": 1,\n                    \"start\": \"08:00:00\",\n                    \"end\": \"16:00:00\"\n                },\n                {\n                    \"day\": 2,\n                    \"start\": \"08:00:00\",\n                    \"end\": \"16:00:00\"\n                },\n                {\n                    \"day\": 3,\n                    \"start\": \"08:00:00\",\n                    \"end\": \"16:00:00\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "ProfilePicture",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Picture",
+									"type": "file",
+									"src": "/C:/Users/narou/Desktop/OIG1.jpeg"
+								}
+							]
+						},
+						"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304/profilePicture"
+					},
+					"response": [
+						{
+							"name": "ProfilePicture",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Picture",
+											"type": "file",
+											"src": "/C:/Users/narou/Desktop/OIG1.jpeg"
+										}
+									]
+								},
+								"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304/profilePicture"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:03:57 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "https://dailylife.runasp.net/Businesses/3c467128-e160-4533-8a32-e4811aa91304/tzoohykx.jpm.jpeg"
+						}
+					]
+				},
+				{
+					"name": "AddToAlbum",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pictures",
+									"type": "file",
+									"src": [
+										"postman-cloud:///1ef1ece5-0d3d-4190-b100-4847b940f70a",
+										"postman-cloud:///1ef1ece5-0bbd-4cc0-8cac-3a36edfa0b40"
+									]
+								}
+							]
+						},
+						"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304/album"
+					},
+					"response": [
+						{
+							"name": "AddToAlbum",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "pictures",
+											"type": "file",
+											"src": [
+												"/C:/Users/narou/Desktop/album/OIG4.jpeg",
+												"/C:/Users/narou/Desktop/album/th.jpeg"
+											]
+										}
+									]
+								},
+								"url": "{{baseurl}}/api/Businesses/3c467128-e160-4533-8a32-e4811aa91304/album"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 21:46:37 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "https://dailylife.runasp.net/Businesses/3c467128-e160-4533-8a32-e4811aa91304/Album/jufbl5bt.1sl.jpeg\nhttps://dailylife.runasp.net/Businesses/3c467128-e160-4533-8a32-e4811aa91304/Album/z12iwdqi.k2g.jpeg"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"rate\": 4,\r\n  \"comment\": \"this is a good cafe\",\r\n  \"businessId\": \"3c467128-e160-4533-8a32-e4811aa91304\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/api/reviews"
+					},
+					"response": [
+						{
+							"name": "Add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"rate\": 4,\r\n  \"comment\": \"this is a good cafe\",\r\n  \"businessId\": \"3c467128-e160-4533-8a32-e4811aa91304\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/api/reviews"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:22:04 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "\"6c78373e-d592-47ae-b3c5-800f1906e16c\""
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImMwMjIyMzZmLTc0OTUtNDcyMS04ZTBiLTA3NTZmYzhhMzc3YyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1haG1vdWRidXM3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkJ1c2luZXNzT3duZXIiLCJzaWQiOiJlOWUzZDU4NS1mMmYzLTRhNjAtYjVhNi0yMGI4MmY5NGFlMDgiLCJqdGkiOiI1OWQzMTM2YS1lNzk3LTQzMTYtYjkyYy00YTM0NmZjMjNkYjIiLCJleHAiOjE3MTMxMDc1NzUsImlzcyI6IkRhaWx5TGlmZSIsImF1ZCI6IkRhaWx5TGlmZSJ9.wpEzht2xq3aaHlKKU7vvaWz2ed05M6wj5l5_682ZlCM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseurl}}/api/reviews/882fe514-abbb-4c67-82f5-a0c5fbccbb5a"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"rate\": 4,\r\n  \"comment\": \"DailyLife is a good cafe\",\r\n  \"businessId\": \"3c467128-e160-4533-8a32-e4811aa91304\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/api/reviews/d25b7f73-09a4-4b0b-83c8-c80e939ed01d"
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"rate\": 4,\r\n  \"comment\": \"DailyLife is a good cafe\",\r\n  \"businessId\": \"3c467128-e160-4533-8a32-e4811aa91304\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/api/reviews/d25b7f73-09a4-4b0b-83c8-c80e939ed01d"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:44:32 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "GetReviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/reviews?businessId=3c467128-e160-4533-8a32-e4811aa91304&page=1&size=5",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "businessId",
+									"value": "3c467128-e160-4533-8a32-e4811aa91304"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetReviews",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/api/reviews?businessId=3c467128-e160-4533-8a32-e4811aa91304&page=1&size=5",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"api",
+										"reviews"
+									],
+									"query": [
+										{
+											"key": "businessId",
+											"value": "3c467128-e160-4533-8a32-e4811aa91304"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:36:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"currentPage\": 1,\n    \"hasNextPage\": false,\n    \"totalCount\": 2,\n    \"result\": [\n        {\n            \"id\": \"6c78373e-d592-47ae-b3c5-800f1906e16c\",\n            \"rate\": 4,\n            \"comment\": \"this is a good cafe\"\n        },\n        {\n            \"id\": \"d25b7f73-09a4-4b0b-83c8-c80e939ed01d\",\n            \"rate\": 5,\n            \"comment\": \"this is a very good cafe\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "GetReviewsSummary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/reviews/summary?businessId=3c467128-e160-4533-8a32-e4811aa91304",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"reviews",
+								"summary"
+							],
+							"query": [
+								{
+									"key": "businessId",
+									"value": "3c467128-e160-4533-8a32-e4811aa91304"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetReviewsSummary",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/api/reviews/summary?businessId=3c467128-e160-4533-8a32-e4811aa91304",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"api",
+										"reviews",
+										"summary"
+									],
+									"query": [
+										{
+											"key": "businessId",
+											"value": "3c467128-e160-4533-8a32-e4811aa91304"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:36:58 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 2,\n    \"averageRate\": 4.5\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Favorites",
+			"item": [
+				{
+					"name": "AddToFavorites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/favorites?businessId=3c467128-e160-4533-8a32-e4811aa91304",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"favorites"
+							],
+							"query": [
+								{
+									"key": "businessId",
+									"value": "3c467128-e160-4533-8a32-e4811aa91304"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddToFavorites",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/api/favorites?businessId=3c467128-e160-4533-8a32-e4811aa91304",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"api",
+										"favorites"
+									],
+									"query": [
+										{
+											"key": "businessId",
+											"value": "3c467128-e160-4533-8a32-e4811aa91304"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:46:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "RemoveFromFavorites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImMwMjIyMzZmLTc0OTUtNDcyMS04ZTBiLTA3NTZmYzhhMzc3YyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1haG1vdWRidXM3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkJ1c2luZXNzT3duZXIiLCJzaWQiOiJmMTE1NTJlMS03YTA5LTRiYjItODc1OS0wZjk5NjgxYzQxZjIiLCJqdGkiOiIyMjU4MWYxZC1mZWFkLTRkYmYtYTJlMC00MzcyYTJkMDU4MDIiLCJleHAiOjE3MTQ3NzE1MTgsImlzcyI6IkRhaWx5TGlmZSIsImF1ZCI6IkRhaWx5TGlmZSJ9.8Mu3m4_bGsOR5WF1v0zkcxRpzyK8WIlRJwvN-Kkedzg"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/favorites?businessId=44dab975-1971-4865-aedf-8c1520a1b186",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"favorites"
+							],
+							"query": [
+								{
+									"key": "businessId",
+									"value": "44dab975-1971-4865-aedf-8c1520a1b186"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFavorites",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/api/favorites"
+					},
+					"response": [
+						{
+							"name": "GetFavorites",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseurl}}/api/favorites"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 16:46:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"3c467128-e160-4533-8a32-e4811aa91304\",\n        \"name\": \"DailyLife Cafe\",\n        \"description\": \"A modern cafe serving a variety of healthy dishes and beverages.\",\n        \"profilePicture\": \"https://dailylife.runasp.net/Businesses/3c467128-e160-4533-8a32-e4811aa91304/tzoohykx.jpm.jpeg\",\n        \"album\": [],\n        \"category\": \"Cafes\",\n        \"location\": {\n            \"latituade\": 30.0626,\n            \"longituade\": 31.2497\n        },\n        \"address\": {\n            \"city\": \"Cairo\",\n            \"state\": \"Cairo Governorate\",\n            \"street\": \"20 Ahmed Heshmat Street\",\n            \"description\": \"Nearby Tahrir Square\"\n        },\n        \"workTimes\": [\n            {\n                \"day\": 0,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            },\n            {\n                \"day\": 1,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            },\n            {\n                \"day\": 2,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            },\n            {\n                \"day\": 3,\n                \"start\": \"08:00:00\",\n                \"end\": \"16:00:00\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/categories?name=Restaurants",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Restaurants"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/api/categories?name=Restaurants",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"api",
+										"categories"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Restaurants"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 14:53:54 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/api/Categories"
+					},
+					"response": [
+						{
+							"name": "GetAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseurl}}/api/Categories"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 14:55:38 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"6fc6df0b-a0a5-4463-ab49-732100583d62\",\n        \"name\": \"Restaurants\"\n    },\n    {\n        \"id\": \"2f01c4d8-6fb5-4375-87e0-9962c3fb41df\",\n        \"name\": \"Cafes\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/api/Categories/6fc6df0b-a0a5-4463-ab49-732100583d62"
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseurl}}/api/Categories/6fc6df0b-a0a5-4463-ab49-732100583d62"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 May 2024 16:27:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"a37d2114-bd65-4723-98ce-fad625f36aa8\",\n    \"name\": \"cafew and restorants\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseurl}}/api/Categories/6fc6df0b-a0a5-4463-ab49-732100583d62"
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseurl}}/api/Categories/6fc6df0b-a0a5-4463-ab49-732100583d62"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 14:58:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isSuccess\": true,\n    \"isFailure\": false,\n    \"statusCode\": 200,\n    \"errors\": []\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU2Yjk4MTkxLTM5MzEtNDBlZC04NDQxLTUwOTY0OWQ5ZTQ0ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1haG1vdWRidXM3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwic2lkIjoiOWVlZWYxZDMtOGNkZi00NzRiLTliY2UtNDE1OTc4NDgwMmFkIiwianRpIjoiMmFlZWViYmMtNDcyOS00N2M2LTliYWMtYjdhOGU4ZTNkMWNlIiwiZXhwIjoxNzE3Njg1NDkwLCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AGypmeC9Kp7TfCJxbbrJs5mP1SkVTgDMC6RuGRdaxA8"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImVlNmExYjEwLTJjNGMtNDQxOS04YjhmLTU2NGEyZjgxZmZmZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1vaGFtbWFkZWxzYWZmeUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJCdXNpbmVzc093bmVyIiwic2lkIjoiY2VhZGJiMjgtMDU3OS00MzQ3LWIyOTUtNmExODM2ZTMxZGU5IiwianRpIjoiMDI3MTg1NWEtZTdmYi00MTMzLTgyMzItMDM5ZjhjMzQ4MjJmIiwiZXhwIjoxNzE3Njg2MjM2LCJpc3MiOiJEYWlseUxpZmUiLCJhdWQiOiJEYWlseUxpZmUifQ.AdHPbW05TbmoJ1JBMmN4rWad1gml8VKEFfVQYt4HWVw"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "https://dailylife.runasp.net",
+			"type": "string"
+		}
+	]
+}
