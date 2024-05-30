@@ -32,7 +32,7 @@ The DailyLife API is a robust web application developed using ASP.NET Core with 
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/dailylife-api.git
+    git clone https://github.com/mah-hassan/DailyLife.git
     cd dailylife-api
     ```
 
@@ -43,13 +43,15 @@ The DailyLife API is a robust web application developed using ASP.NET Core with 
 
 3. Update database connections in `appsettings.json`.
 
-4. Apply database migrations:
+4. Make sure to add secretKey in jwt section as well as email and password in email settings section in `appsettings.json`.
+
+5. Apply database migrations:
     ```bash
     dotnet ef database update --context AppIdentityDbContext
     dotnet ef database update --context BusinessDbContext
     ```
 
-5. Run the application:
+7. Run the application:
     ```bash
     dotnet run
     ```
